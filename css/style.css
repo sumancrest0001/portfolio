@@ -4,6 +4,7 @@ body {
   font-size: 10px;
   text-align: center;
 }
+
 #particles-js {
   background-image: url(../images/background.webp);
   height: 100vh;
@@ -64,6 +65,7 @@ body {
   width: 100%;
   display: inline-flexbox;
   justify-content: flex-start;
+  list-style: none;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -85,7 +87,7 @@ body {
   transition: ease-out, 0.5s;
 }
 /* About section */
-.about-section {
+#about {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -199,7 +201,7 @@ a:hover,
 
 /* Projects-section */
 
-#projects-section {
+#portfolio {
   padding: 20px 70px;
   background-color:#e8e8e8;
 }
@@ -246,7 +248,7 @@ a:hover,
 }
 
 /* Articles section */
-.article-section {
+#articles {
   margin-bottom: 50px;
 }
 .article-list {
@@ -309,7 +311,7 @@ a:hover,
 /* contact section */
 
 
-.contact-section {
+#contact {
   clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
   background-color: #242424;
   padding: 50px 0;
@@ -421,13 +423,22 @@ a:hover,
   color: #E31B6D;
 }
 
-.up-arrow i {
+.up-arrow {
+  display: inline-block;
   font-size: 16px;
   padding: 10px;
   background-color: #E31B6D;
-  color: #fff;
   border: 2px solid #242424;
   position: absolute;
   bottom: 1%;
   right: 2%;
+}
+
+.up-arrow:hover {
+  background-color: aqua;
+  border: #fff;
+}
+
+.up-arrow i {
+  color: #fff;
 }
