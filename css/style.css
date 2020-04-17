@@ -1,10 +1,10 @@
-
-body {
-  position: relative;
+html {
   font-size: 10px;
+  scroll-behavior: smooth;
+}
+body {
   text-align: center;
 }
-
 #particles-js {
   background-image: url(../images/background.webp);
   height: 100vh;
@@ -24,13 +24,13 @@ body {
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
-  z-index: 20;
+  z-index: 2;
 }
 
 .text {
-  font-size: 40px;
-  line-height: 45px;
-  margin: 0 0 0 20px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin: 0 0 0 2rem;
   color: #fff;
 }
 
@@ -42,7 +42,7 @@ body {
   font-size: 25px;
   line-height: 28px;
   padding: 10px 20px;
-  margin-top: 20px;
+  margin: 20px 0;
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
@@ -52,10 +52,12 @@ body {
 }
 
 .workbtn:hover {
+  border: none;
+  padding: 12px 20px;
   cursor: pointer;
+  color:white;
   background-color: aqua;
-  border: aqua;
-  transition: ease-out 1s;
+  transition: ease-out;
 }
 
 /* navbar section */
@@ -65,7 +67,6 @@ body {
   width: 100%;
   display: inline-flexbox;
   justify-content: flex-start;
-  list-style: none;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -87,7 +88,7 @@ body {
   transition: ease-out, 0.5s;
 }
 /* About section */
-#about {
+.about-section {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -188,7 +189,7 @@ a:hover,
 
 .language-title {
   margin-top: 80px;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
@@ -201,13 +202,13 @@ a:hover,
 
 /* Projects-section */
 
-#portfolio {
+#projects {
   padding: 20px 70px;
   background-color:#e8e8e8;
 }
 
-
 .projects-nav {
+  width: 40px;
   display: inline-flex;
   justify-content: center;
 }
@@ -216,13 +217,16 @@ a:hover,
   list-style: none;
   font-size: 20px;
   text-transform: uppercase;
-  margin: 0 30px;
+  margin: 0 10px;
+  padding: 0.7px 20px;
   color: #616161;
 }
 .primary-lan:hover {
   background-color: #E31B6D;
   color: #fff;
-  padding: 5px 10px;
+}
+.primary-lan a {
+  color: black;
 }
 
 .projects-list {
@@ -246,11 +250,31 @@ a:hover,
 #project-3 {
   background-image: url(../images/website1.png);
 }
+#project-4 {
+  background-image: url(../images/website1.png);
+}
+#project-5 {
+  background-image: url(../images/website1.png);
+}
+#project-6 {
+  background-image: url(../images/website1.png);
+}
+#project-7 {
+  background-image: url(../images/website1.png);
+}
+#project-8 {
+  background-image: url(../images/website1.png);
+}
+#project-9 {
+  background-image: url(../images/website1.png);
+}
 
 /* Articles section */
-#articles {
+#article {
+  margin-top: 20px;
   margin-bottom: 50px;
 }
+
 .article-list {
   width: 90%;
   margin: auto;
@@ -258,7 +282,7 @@ a:hover,
   justify-content: space-between;
 }
 
-.article {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,7 +329,6 @@ a:hover,
 .article-metatag {
   font-size: 14px;
   color: #616161;
-  text-align: start;
 }
 
 /* contact section */
@@ -372,12 +395,13 @@ a:hover,
 }
 
 .contact-form input:last-child {
+  width: 130px;
+  height: 45px;
   background: transparent;
   font-size: 20px;
   color: #fff;
   border: 2px solid #fff;
   float: right;
-  padding: 5px 30px;
 }
 
 .contact-form input:last-child:hover {
@@ -396,6 +420,7 @@ a:hover,
 .footer-section {
   padding: 50px 0;
   background: #000;
+  position: relative;
 }
 
 .socialmedia {
@@ -424,13 +449,15 @@ a:hover,
 }
 
 .up-arrow {
-  display: inline-block;
-  font-size: 16px;
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 50px;
   background-color: #E31B6D;
   border: 2px solid #242424;
   position: absolute;
-  bottom: 1%;
+  bottom: 20%;
   right: 2%;
 }
 
@@ -440,5 +467,6 @@ a:hover,
 }
 
 .up-arrow i {
+  align-items: center;
   color: #fff;
 }
